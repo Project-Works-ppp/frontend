@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+   
+    
+    <link rel="stylesheet" type="text/css" href="aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <title>STudentArena</title>
+    <link href="band.css" rel="stylesheet">
+    <link href="bala.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+<!-- Boostrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script type="text/javascript">
+      $('.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint:1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    } ]
+});</script>
+    <style>
+      body{
+            background-size:cover;
+            background-attachment:fixed;
+            animation: animate 16s infinite
+          }
+          @keyframes animate{
+            0%,100%{
+             background-image: url(im4.jpg)
+            }
+            0%,25%{
+             background-image: url(im5.jpg)
+            }
+  
+            0%,75%{
+            background-image: url(im3.jpg)
+            }
+
+          }
+          html
+          ,.hio {
+            height: 100%;
+            grid-gap: 100px;
+            background-image:url(background2.jpg);
+            background-attachment:fixed;
+            background-size: cover;
+            }
+      .container{
+        padding-top: 150px
+      }
+      .article{
+        margin:20px;
+        padding-top:500px;
+      }
+      .details{
+        margin: 20px 0;
+        background-color: #8D8C8A;
+        padding: 30px 20px;
+        position: relative;
+        z-index: 1;
+      }
+      .details h2{
+        font-size: 22px;
+        text-transform: uppercase;
+        transition: 0.6s all;
+      }
+      .details p{
+        font-size: 14px;
+        color: #000;
+        transition: 0.6s all;
+      }
+      .details a{
+        text-decoration: none;
+        text-transform: capitalize;
+        color: #fff;
+        background-color: #2c3e50;
+        padding: 6px 12px;
+        display: inline-block;
+        font-size: 14px;
+        border:1px solid #2c3e50;
+      }
+      .details::before{
+        content: "";
+        width: 5px;
+        height: 100%;
+        background-color: #363538;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        transition: 0.6s all;
+      }
+      .details:hover::before{
+        width: 100%;
+      }
+      .explore:hover span{
+        color:#fff;
+        }
+      .explore:hover a{
+        background-color: #212F3D;
+      }
+      .details:hover h2,.details:hover p{
+        color: #fff;
+      }
+      .details:hover a{
+        background-color: transparent;
+        border:1px solid #fff;
+      }
+
+     body{
+        font-family: lato;
+      }
+      .mla{
+        margin-top:12.5% ;
+      }
+       .glow {
+  font-size: 80px;
+  color: #fff;
+  position: relative;
+  left: 1500px;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                       0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+        }
+        to {
+          text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+                       0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+}
+
+      .main h3{
+        color: #fff;
+        left: 50%;
+        right: 50%;
+        position: center;
+        font-family: Times New Roman;
+      }
+      .arrow{
+        color: #fff;
+        margin-top: 0% ;
+        left: 50%;
+        position: absolute;
+        bottom: 20px;
+      }
+      .bounce {
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+        }
+     @keyframes bounce {
+     0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+     40% {
+      transform: translateY(-30px);
+       }
+     60%{
+      transform: translateY(-15px);
+       }
+    }
+      .start{
+      text-align:center;
+    }
+@media only screen and (max-width: 100px) {
+  .mla{
+        margin-top:30% ;
+      }
+}
+    </style>
+    </head>
+    <body>
+    
+      <nav class="navbar  fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+          
+            <img src="question.png" width="50" height="50" class="d-inline-block align-center" alt="logo">
+           <span style="color:#ffffff";>Student<span style="color:yellow";>Arena</span></span>
+         
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto pl-2 pr-2">
+            <li class="nav-item active" >
+            <input style="position: relative; right: 20px;" name="search" id="mySearchField" type="text" placeholder="Search..">
+            <button id="mySearchButton">Search</button>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-white p-2 axz hvr-underline-from-center" href="#"><i class="fas fa-home "></i> About Us<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          
+        </div>
+      </nav>
+      <div class="container">
+      <!--<a class="btn btn-outline-white btn-md"><i class="fas fa-clone left"></i> View project</a>-->
+      <!--<div class="container">-->
+        <div class="main">
+       <h3 data-aos="zoom-in" class="glow" style="position:relative; left:20px;">Do More</h3>
+  <p class="lead">
+         <p class="arrow bounce">
+            <i class="fa fa-arrow-down fa-2x"></i>
+          </p>
+</div>  
+         <div class="article">
+        <div class="row slider" id="conntent" >
+            </div>
+          </div>
+
+    <!--footer-->
+    <footer class="page-footer font-small sda pt-4 ft">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto ">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 aver"><span style="color:#ffffff" ;="">Student<span style="color:yellow" ;="">Arena</span></span></h5>
+        <p class="aver">Mini Project</p>
+        <p class="aver">5th Semester</p>
+        <p class="aver">2018-2022</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto ">
+
+        <!-- Links -->
+        
+        <ul class=" sda list-unstyled \">
+          
+          <li>
+            <a class="aver" href="#!">ANALYSE RECOMMENDATION MODEL</a>
+          </li>
+              </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+
+        <ul class="list-unstyled sda">
+         
+          <li>
+            <a class="aver" href="#!">ABOUT US</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto aver">
+
+        <!-- Links -->
+          <li>
+            <a class="aver" href="#!">CONTACT US</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <hr>
+ 
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 aver hmn">© 2021 Copyright:
+    <a class="aver" href="#"></a> Made by StudentArena <large><i class="fas fa-heart "></i></large>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<script>
+
+       /*function fetch(){
+         $.ajax({
+          url: "https://studentarena-api.herokuapp.com/jobs?title=automation%20test%20engineer",
+          type:"GET",
+          contentType:'application/json',
+          data:JSON.stringify(),
+          success:function(data){
+            
+            for(var key in data){
+              console.log(data[key].Company);
+            }
+          }
+         });
+}*/
+$(function() {
+        var _myContentArea = document.getElementById("conntent");
+        var _mySearchButton = document.getElementById("mySearchButton");
+        _mySearchButton.onclick = getData;
+
+        function getData(){
+          var _myContentArea = document.getElementById("conntent");
+        var _mySearchButton = document.getElementById("mySearchButton");
+        let _mySearchField = document.getElementById("mySearchField");
+            $.ajax({
+            url: "https://studentarena-api.herokuapp.com/jobs?title="+_mySearchField.value,
+           method: "GET",
+            contentType:"application/json",
+            data:JSON.stringify(),
+            success: function(data) {
+               /* var str = "";          
+               for(var i in data){
+
+                  _myContentArea.innerHTML=
+                    "<div class='center details' style='height:300px; width:30rem;'>"+
+                    "<h1>"+data[i].Job_title+"</h1>"+
+                    "<h4 style='text-align:right;' >"+data[i].Company+"</h4>"+
+                    "<h4 style='text-align:right;' >"+data[i].Job_Description+"</h4>"+
+                    //"<p style='text-align:justify;'>"+value.content+"</p>"+
+                     "</div>"+_myContentArea.innerHTML;
+                 /*str +='Job Title : '+data[i].Job_title+' <br> Job Description: '+data[i].Job_Description+' <br>Company: '+data[i].Company+'<br><br>';*/
+                 for ( let i=0; i<6;i++)
+                {
+                  let obj = data[i];
+                  let div1 = document.createElement('div');
+                  let div2 =document.createElement('div');
+                  div1.setAttribute('class', 'col-md-6');
+                  div1.setAttribute('data-aos', 'zoom-in');
+                  div2.setAttribute('class','details')
+                  let title = document.createElement('h2');
+                  let company = document.createElement('h4');
+                  let desc = document.createElement('h4');
+                  title.innerHTML = data[i].Job_title;
+                  company.innerHTML = data[i].Company;
+                  desc.innerHTML = data[i].Job_Description.slice(0,50);  
+                  div2.appendChild(title);
+                  div2.appendChild(company);
+                  div2.appendChild(desc);
+                  div1.appendChild(div2)
+                  _myContentArea.appendChild(div1);
+                 console.log(i);
+               }
+            }
+            });
+        }
+
+    });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      
+     
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity= 
+"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"> 
+    </script> 
+      
+    
+      <script type="text/javascript" src="particles.js"></script>
+      <script type="text/javascript" src="app.js"></script>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"></script>
+    <script src="aos.js"></script>
+    <script type="text/javascript">
+      AOS.init({
+        duration:2000
+      });
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity= "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+<script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity= "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>    
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+  </html>
